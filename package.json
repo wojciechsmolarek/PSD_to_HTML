@@ -1,0 +1,27 @@
+{
+  "name": "recruitmentTask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wojciechsmolarek/recruitmentTask.git"
+  },
+  "keywords": [],
+  "author": "Wojciech Smolarek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wojciechsmolarek/recruitmentTask/issues"
+  },
+  "homepage": "https://github.com/wojciechsmolarek/recruitmentTask#readme"
+}
