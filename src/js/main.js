@@ -1,5 +1,8 @@
 $(document).ready(function() {
   $("#sticker").sticky({topSpacing: 70, zIndex: 999});
+  $("#toggle-btn").click(function() {
+    $(".menu-container").toggleClass('active');
+  });
 });
 
 function initMap() {
