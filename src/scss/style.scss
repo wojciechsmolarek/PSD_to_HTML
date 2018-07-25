@@ -143,3 +143,139 @@ html, body {
     margin-top: 100px;
   }
 }
+
+.products {
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+  background: $blue;
+  display: flex;
+  .product-content {
+    width: 30%;
+    margin: 0 1%;
+    display: block;
+    float: left;
+    img {
+      float: left;
+      margin-right: 15px;
+    }
+    h3 {
+      color: #fff;
+      font-size: 30px;
+      font-family: "Karbon-Light";
+      sup {
+        font-size: 13px;
+      }
+    }
+    .subtitle {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      position: relative;
+      &::after {
+        content: '';
+        width: 130px;
+        height: 1px;
+        background: $light-gray;
+        opacity: .2;
+        position: absolute;
+        bottom: -10px;
+        left: 109px;
+      }
+    }
+    .product-description {
+      clear: both;
+      margin: 20px 0 0 108px;
+      font-family: "Karbon-Light";
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+  .section-header {
+    color: #fff;
+  }
+  &::before, &::after {
+    position: absolute;
+    content: ' READ MORE';
+    line-height: 40px;
+    font-size: 11px;
+    font-weight: 700;
+    left: calc(50% - 96px);
+    width: 66px;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+  }
+  &::before {
+    color: #fff;
+    border-bottom: 32px solid $blue;
+    top: -31px;
+  }
+  &::after {
+    color: $blue;
+    border-bottom: 32px solid #f1f4f6;
+    bottom: 0;
+  }
+}
+
+.careers {
+  width: 100%;
+  min-height: 700px;
+  background-image: url(../img/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .hexagon {
+  	width: 12em;
+  	border-left: 3em solid transparent;
+  	border-right: 3em solid transparent;
+  	position: absolute;
+    transform: scale(2);
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -3em;
+      top: calc(5em - 1px);
+      width: 6em;
+      border-top: 5em solid $blue;
+      border-left: 3em solid transparent;
+      border-right: 3em solid transparent;
+    }
+  }
+  .hexagon1 {
+    border-bottom: 5em solid $blue;
+    top: -1px;
+    left: 22%;
+  }
+  .hexagon2 {
+    border-bottom: 5em solid $blue;
+    top: 159px;
+    left: calc(22% + 288px);
+  }
+  .hexagon1-content, .hexagon2-content {
+    position: absolute;
+    left: 22%;
+    top: 40px;
+    h3 {
+      color: #fff;
+      font-size: 40px;
+      font-family: "Karbon-Light";
+      text-align: center;
+    }
+    p {
+      font-family: "Karbon-Light";
+      margin-top: 10px;
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+  .hexagon2-content {
+    top: 164px;
+    left: calc(22% + 288px);
+    text-align: center;
+    img {
+      margin-bottom: 20px;
+    }
+  }
+}
